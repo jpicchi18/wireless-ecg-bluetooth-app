@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>Bluetooth app</title>
+
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+
+</head>
+
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+
+	<!-- START VIEW -->
+	<div id="startView">
+
+		<h1 style="text-align:center;">Arduino Bluetooth Testing App</h1>
+
+		<button id="scan"  onclick="app.connect()" >Scan Bluetooth</button>
+
+		<button id='stopScan'  onclick='app.stopScan()'>Stop Scan</button>
+	</div>
+
+	<!-- CONTROL PANEL -->
+	<div id='controlsView' class='wrapper' style='background-color: azure; display: None'>
+		<h1>Bluetooth Connected</h1>
+		<p id='deviceName'></p>
+		<div id="chartContainer" style="height: 370px; width:100%;"></div>
+		<button id='disconnect' onclick='app.disconnect()'>Disconnect</button>
+
+	</div>
+
+
+	<script src="cordova.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
+	<script src="./canvasjs.min.js"></script>
+	<script src="libs/evothings/easyble/easyble.js"></script>
+	<script src="libs/evothings/arduinoble/arduinoble.js"></script>
+	<script src="./display.js"></script>
+	<script src="./app.js"></script>
+
+
+
+	<!-- TODO: Add libraries that you need -->
+
+</body>
+
+</html>

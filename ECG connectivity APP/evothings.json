@@ -1,0 +1,23 @@
+{
+  "name": "ecg-connectivity-app",
+  "version": "1.0.0",
+  "title": "ECG connectivity APP",
+  "description": "Bluetooth Connectivity Testing ",
+  "tags": [],
+  "libraries": [
+    {
+      "name": "jquery",
+      "version": "2.1.1"
+    }
+  ],
+  "plugins": [],
+  "index-file": "index.html",
+  "uuid": "a113960f-e6a9-4b6c-a121-89a65d13fd8a",
+  "icon": "app-icon.png",
+  "doc-url": "http://evothings.com/2.2/doc/examples/template-basic-app.html",
+  "long-description": "Bluetooth connectivity Testing",
+  "cordova-id": "com.evothings.examples.templatebasicapp",
+  "author-name": "Evothings",
+  "author-email": "build@evothings.com",
+  "author-url": "https://evothings.com"
+}
